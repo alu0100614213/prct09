@@ -1,7 +1,7 @@
-require "matriz_sf/version"
+#require "matriz_sf/version"
 
 class Vectordisperso
-  attr_reader_:vector
+  attr_reader :vector
   
   def initialize(h = {})
     @vector = Hash.new(0)
@@ -18,7 +18,7 @@ class Vectordisperso
 end
 
 class Matrizdispersa
-  attr_reader_:matriz
+  attr_reader :matrix
   
   def initialize(h = {})
     @matrix = Hash.new({})
@@ -45,7 +45,8 @@ class Matrizdispersa
   
   
   def to_s
-    str = @matriz.map {|k,v| "#{k} => #{v.to_s}"}.join(", ")
+    str = @matrix.map {|k,v| "#{k} => #{v.to_s}"}.join(", ")
     str = "{ #{str} }"
   end
 end
+
